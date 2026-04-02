@@ -6,7 +6,7 @@ public class CircleController : MonoBehaviour
 
     [SerializeField] private GameObject piecePrefab;
     [SerializeField] private int pieceCount = 12;
-    public List<GameObject> pieces = new List<GameObject>();
+    private readonly List<GameObject> pieces = new List<GameObject>();
     public enum LevelDifficulty
     {
         Simple,

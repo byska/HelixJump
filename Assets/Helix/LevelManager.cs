@@ -16,6 +16,12 @@ public class LevelManager : MonoBehaviour
 
     private void CreateLevel()
     {
+        if (cylinder == null)
+        {
+            Debug.LogError("Cylinder atanmamýþ!");
+            return;
+        }
+
         for (int i = 0; i < circleCount; i++)
         {
             Debug.Log("CreateLevel çalýþtý");

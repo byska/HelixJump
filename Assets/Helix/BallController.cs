@@ -14,7 +14,7 @@ public class BallController : MonoBehaviour
     private void FixedUpdate()
     {
         var vertical = rb.linearVelocity;
-        vertical.y = Math.Clamp(vertical.y, velocityLimitMinMax.x, velocityLimitMinMax.y);
+        vertical.y = Mathf.Clamp(vertical.y, velocityLimitMinMax.x, velocityLimitMinMax.y);
         rb.linearVelocity = vertical;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
